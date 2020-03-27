@@ -1,17 +1,15 @@
 # Add  code here!
 
 def prime?(num)
-  if num < 2
+  if num <= 1
     false
   else
-   arr = (2..num-1).to_a
-  bool = true
-  arr.each do |div|
-    if num%div == 0
-      bool = false  
-    end
-  end
+  if (2..num-1).any? { |i| n % i == 0}
+    return
+  else
+    true
+ end
 end
-    return bool
+   
 end
 
