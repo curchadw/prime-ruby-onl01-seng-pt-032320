@@ -11,6 +11,7 @@ def prime?(num)
       bool = false  
     end
   end
+end
     return bool
 end
 
