@@ -1,12 +1,13 @@
 # Add  code here!
 
 def prime?(number)
- unless num.is_a? Integer
- 
-  if num%2 !=0 && num!=2
-    true
+ start = 2
+  if number > 1
+    range = (start..number-1).to_a
+    range.none? do |num_to_test| 
+      number % num_to_test == 0
+    end
   else
     false
   end
-end
 end
