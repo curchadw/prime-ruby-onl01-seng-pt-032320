@@ -6,8 +6,8 @@ def prime?(n)
    end
     (2..n).to_a.each do |n| 
       if (n % i == 0) 
-            return false
-   end
+           false
+    end
     return true
   end
 end
