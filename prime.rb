@@ -1,9 +1,11 @@
 # Add  code here!
 
 def prime?(num)
-  if num % 2 != 0
-    return true
-  else
-    return false
-  end
+  flag = true
+    for x in 2..num-1
+        if num % x == 0
+            flag = false
+        end
+    end
+    return flag
 end
