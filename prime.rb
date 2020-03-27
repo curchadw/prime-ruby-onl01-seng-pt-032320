@@ -1,6 +1,6 @@
 # Add  code here!
 
-def prime?(num)
+def prime?(number)
  unless num.is_a? Integer
  
   if num%2 !=0 && num!=2
