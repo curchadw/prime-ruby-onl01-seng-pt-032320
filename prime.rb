@@ -2,7 +2,7 @@
 
 def prime?(n)
    if (n <= 1)
-        return False
+        false
    end
     for i in(2..n).to_a 
         if (n % i == 0) 
